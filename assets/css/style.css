@@ -1,0 +1,35 @@
+button {
+    margin: 10px;
+}
+
+.add button {
+    margin: 0;
+    padding: 0 20px;
+    height: 30px;
+}
+
+.add input {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.gifs img {
+    height: 150px;
+}
+
+.gifs div {
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.gifs h4 {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .gifs img {
+        max-width: calc(100%);
+        height: auto;
+    }
+}
