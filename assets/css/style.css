@@ -2,6 +2,10 @@ button {
     margin: 10px;
 }
 
+hr {
+    border-color: #ccc;
+}
+
 .add button {
     margin: 0;
     padding: 0 20px;
@@ -13,22 +17,32 @@ button {
     margin-right: 10px;
 }
 
-.gifs img {
+.gifs img, .favs img {
     height: 150px;
 }
 
-.gifs div {
+.gifs div, .favs div {
     display: inline-block;
     overflow: hidden;
     margin: 10px;
+    position: relative;
 }
 
-.gifs h4 {
+.star {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    color: gold;
+    transition: all 0.1s ease;
+}
+
+.gifs h4, .favs h4 {
     font-size: 1rem;
 }
 
 @media (max-width: 768px) {
-    .gifs img {
+    .gifs img, .favs img {
         max-width: calc(100%);
         height: auto;
     }
