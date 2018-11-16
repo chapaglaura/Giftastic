@@ -91,7 +91,7 @@ $(document).ready(function () {
             }
         });
 
-        queryURL = "http://www.omdbapi.com/?t=" + search + "&apikey=trilogy&plot=full";
+        queryURL = "https://www.omdbapi.com/?t=" + search + "&apikey=trilogy&plot=full";
 
         $.ajax({
             url: queryURL,
